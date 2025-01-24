@@ -4,61 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Vs CSS</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div>
+<body class="flex justify-center items-center w-[100vw] h-[100vh]">
+    <div class="border-2 w-[522px] h-[711px] rounded-[31px] p-7 relative">
         <!-- Vertical Line -->
-        <div></div>
+        <div class="w-[1px] bg-black h-[35%] absolute top-[157px] left-[44px]"></div>
         <!-- Title and status -->
-        <div>
-            <div>
-                <p>New Opportunity</p>
+        <div class="flex justify-between mb-[36px]">
+            <div class="text-[23px] font-semibold text-[#333333]">
+                <p class="flex items-center gap-3"> <i class="fa-regular fa-envelope"></i>New Opportunity</p>
             </div>
-            <button>Available</button>
+            <button class="border-2 rounded-[6px] py-1 px-3">Available</button>
         </div>
 
         <!-- Main Content Container  -->
         <div>
             <!-- User1 Info -->
-            <div >
-                <div></div>
-                <p >Jenifer A.</p>
+            <div class="flex gap-3 items-center mb-[7px]">
+                <div style="background-image: url('./assets/man-portrait.jpg');" class=" rounded-full w-9 aspect-square bg-center bg-cover"></div>
+                <p class="text-[18px] font-semibold">Jenifer A.</p>
                 <p>Meta --- Facebook</p>
                 <p>• California</p>
             </div>
 
-            <p>$35,000 - $45,000</p>
+            <p class="text-[34px] font-semibold mb-[16px] ms-[60px]">$35,000 - $45,000</p >
 
-            <div>
-                <p></i>14 Oct - 2024</p>
-                <p></i>89.5% Match</p>
+            <div class="flex gap-8 text-[18px] mb-[27px] ms-[60px]">
+                <p> <i class="fa-regular fa-calendar-check"></i> 14 Oct - 2024</p>
+                <p> <i class="fa-solid fa-certificate"></i> 89.5% Match</p>
             </div>
 
             <!-- Tags -->
-            <div>
-                <div>4.9</div>
-                <div >Web Design</div>
-                <div>Responsive</div>
+            <div class="text-[16px] flex gap-3 mb-[36px] ms-[60px]">
+                <div class="bg-[#05B973] px-6 py-2 rounded-full"><i class="fa-regular fa-star"></i> 4.9</div>
+                <div class="bg-[#C1B6FC] px-6 py-2 rounded-full" >Web Design</div>
+                <div class="bg-[#FFF677] px-6 py-2 rounded-full">Responsive</div>
             </div>
 
             <!-- Description -->
-            <p>
+            <p class="text-[18px] mb-[34px] ms-[60px]">
                 Need Responsive Website showcase product
                 Modern and visually appealing design.
             </p>
 
             <!-- User2 Info -->
-            <div>
-                <div></div>
-                <p>Robert T.</p>
+            <div class="flex gap-3 text-[18px] items-center mb-[65px]">
+                <div style="background-image: url('./assets/woman-portrait.jpg');" class="bg-center bg-cover rounded-full w-9 aspect-square"></div>
+                <p class="font-bold">Robert T.</p>
                 <p>Full Cycle Agency</p>
                 <p>• Salt Lake</p>
             </div>
         </div>
         <!-- Button Container -->
         <div>
-            <button>Accept Project</button>
-            <button>Decline Offer</button>
+            <button class="rounded-full py-4 w-full bg-black text-white mb-[18px]">Accept Project</button>
+            <button class="rounded-full py-4 w-full border-2">Decline Offer</button>
         </div>
     </div>
 </body>
